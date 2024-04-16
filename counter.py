@@ -7,7 +7,7 @@ handle_creation = Seq(
 router = Router(
     "Simple Router",
     BareCallActions(
-        no_op = OnCompleteActions.create_only(handle_creation),
+        no_op = OnCompleteAction.create_only(handle_creation),
     ),
 )
 
